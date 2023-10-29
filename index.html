@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <!-- Meus CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,400&family=Roboto+Slab:wght@500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="poke">
+            <!-- <h2>POKEMON'S</h2> -->
+            <img class="logo" src="./src/images/pokemons/logo.png" alt="logo do pokemon">
+            <img class="pokebola" src="./src/images/pokemons/pokebola.png" alt="pokebola">
+        </div>
+
+        <div class="game"></div>
+        <button class="reset" onclick="window.location.reload()">RESET GAME</button>
+    </div>
+
+    <div class="msg">
+
+        <button class="btn" onclick="showAlert()">Mostrar alerta</button>
+
+        <div class="msg-time" id="alert-time">
+            <span class="close-btn" onclick="closeAlert()">&times;</span>
+            <p class="p-time">Parabéns! Você descobriu todos.</p>
+        </div>
+    </div>
+
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+
+</html>
